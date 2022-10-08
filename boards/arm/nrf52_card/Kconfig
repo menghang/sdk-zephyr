@@ -1,0 +1,11 @@
+# nRF52 Card board configuration
+
+# Copyright (c) 2016 Nordic Semiconductor ASA
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_ENABLE_DCDC
+	bool "DCDC mode"
+	select SOC_DCDC_NRF52X
+	default y
+	depends on BOARD_NRF52_CARD
+	

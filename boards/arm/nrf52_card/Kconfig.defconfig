@@ -1,0 +1,14 @@
+# nRF52 Card board configuration
+
+# Copyright (c) 2016 Nordic Semiconductor ASA
+# SPDX-License-Identifier: Apache-2.0
+
+if BOARD_NRF52_CARD
+
+config BOARD
+	default "nrf52_card"
+
+config BT_CTLR
+	default BT
+
+endif # BOARD_NRF52DK_NRF52832
